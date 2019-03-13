@@ -1,0 +1,18 @@
+# Set paths
+# Path for IIS to read application from
+$iis_physical_path = "C:\MovieApp\package"
+
+# Set the target path for the junction
+$target_path = "{{pkg.path}}/{{pkg.name}}-{{pkg.version}}"
+
+# Determine the parent
+$parent_path = Split-Path -Path $iis_physical_path -Parent
+
+# Ensure that the parent exists
+if (!(Test-Path -Path $parent_path)) {
+  New-Item -Path $parent_path -ItemType Directory
+}
+
+if(!(Test-Path -Path $iis_physical_path)) {
+  New-Item -Path $iis_physical_path -ItemType Junction -target $target_path | Out-Null
+}
