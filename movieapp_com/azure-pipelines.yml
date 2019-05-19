@@ -1,0 +1,41 @@
+﻿# Set the major.minor version of the build
+name: 1.0$(rev:.r)
+
+trigger:
+ - master
+
+pool:
+ name: eas-demo-build
+
+steps:
+- task: chef-software.vsts-habitat-tasks.vsts-habitat-tasks-signing-key.vsts-habitat-signing-key@3
+  displayName: 'Signing Origin Key'
+  inputs:
+    habitatOrigin: EAS Demo Habitat Endpoint
+
+- task: chef-software.vsts-habitat-tasks.vsts-habitat-tasks-build.vsts-habitat-build@3
+  displayName: 'Build Habitat plan'
+  inputs:
+    habitatOrigin: EAS Demo Habitat Endpoint
+    habitatPlanContext: habitat
+    habitatSrcPath: '$(Build.SourcesDirectory)/movieapp_com'
+
+- task: chef-software.vsts-habitat-tasks.vsts-expose-habitat-build-vars.vsts-habitat-expose-habitat-build-vars@3
+  displayName: 'Expose Habitat Build Variables'
+  inputs:
+    habitatSetBuildNumber: true
+    habitatLastBuildEnvPath: '$(Build.SourcesDirectory)/movieapp_com/results'
+
+- task: CopyFiles@2
+  displayName: 'Copy Files to: $(build.artifactstagingdirectory)'
+  inputs:
+    SourceFolder: '$(Build.SourcesDirectory)/movieapp_com/results'
+    Contents: |
+     *-$(Build.BuildNumber)-*.hart
+     last_build.env
+    TargetFolder: '$(build.artifactstagingdirectory)'
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact: drop'
+  inputs:
+    PathtoPublish: '$(build.artifactstagingdirectory)'    

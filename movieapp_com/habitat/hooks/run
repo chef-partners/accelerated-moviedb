@@ -1,0 +1,27 @@
+﻿$ProgressPreference="SilentlyContinue"
+Invoke-Command -ComputerName localhost -EnableNetworkAccess {
+    $ProgressPreference="SilentlyContinue"
+    Write-Host "Checking for nuget package provider..."
+    if(!(Get-PackageProvider -Name nuget -ErrorAction SilentlyContinue -ListAvailable)) {
+        Write-Host "Installing Nuget provider..."
+        Install-PackageProvider -Name NuGet -Force | Out-Null
+    }
+    Write-Host "Checking for xWebAdministration PS module..."
+    if(!(Get-Module xWebAdministration -ListAvailable)) {
+        Write-Host "Installing xWebAdministration PS Module..."
+        Install-Module xWebAdministration -Force | Out-Null
+    }
+}
+
+Import-Module "{{pkgPathFor "core/dsc-core"}}/Modules/DscCore"
+Start-DscCore (Join-Path {{pkg.svc_config_path}} website.ps1) movieapp_com
+
+# This section is in the run hook becuase the IIS APPPOOL provider does not
+# exist until it is installed, so cannot be used to add an ACL.
+$pool = "{{cfg.site.site_name}}_apppool"
+$access = New-Object System.Security.AccessControl.FileSystemAccessRule "IIS APPPOOL\$pool", "ReadAndExecute", "Allow"
+$acl = Get-Acl "{{pkg.svc_config_path}}/Web.config"
+$acl.SetAccessRule($access)
+$acl | Set-Acl "{{pkg.svc_config_path}}/Web.config"
+
+sleep 60

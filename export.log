@@ -1,0 +1,281 @@
+2019-05-15 14:18:35.944 +00:00 [INF] Chef Enterprise Legacy App Migration toolkit: elam-cli, Version=1.0.55.0, Culture=neutral, PublicKeyToken=null
+2019-05-15 14:18:35.959 +00:00 [VRB] Executed using arguments ["export-iis","-o","c:\\tools\\elam\\run","--property","origin=EAS","--include","movieapp"]
+2019-05-15 14:18:35.959 +00:00 [VRB] IISExporter Exporter class loaded from C:\ProgramData\elam\elam-cli.dll
+2019-05-15 14:18:35.990 +00:00 [VRB] Executing C:\windows\system32\inetsrv\appcmd.exe with arguments: list apps /xml /config:*
+2019-05-15 14:18:36.053 +00:00 [VRB] Executing C:\windows\system32\inetsrv\appcmd.exe with arguments: list apppools /xml
+2019-05-15 14:18:36.115 +00:00 [VRB] Server has 2 discovered apps before filtering.
+2019-05-15 14:18:36.115 +00:00 [VRB] Filtering data using include regex: movieapp and exclude regex: 
+2019-05-15 14:18:36.131 +00:00 [VRB]  + filtering will include movieapp_com
+2019-05-15 14:18:36.131 +00:00 [INF] Export starting with strategy: "IIS"
+2019-05-15 14:18:36.131 +00:00 [INF] Exporting package name movieapp_com from C:\build\MovieApp (detected as aspnet35)
+2019-05-15 14:18:36.131 +00:00 [VRB] Executing C:\windows\system32\robocopy.exe with arguments: "C:\build\MovieApp" "c:\tools\elam\run\movieapp_com\publish" /MIR /NP
+2019-05-15 14:18:36.147 +00:00 [VRB] 
+2019-05-15 14:18:36.147 +00:00 [VRB] -------------------------------------------------------------------------------
+2019-05-15 14:18:36.147 +00:00 [VRB]    ROBOCOPY     ::     Robust File Copy for Windows                              
+2019-05-15 14:18:36.147 +00:00 [VRB] -------------------------------------------------------------------------------
+2019-05-15 14:18:36.147 +00:00 [VRB] 
+2019-05-15 14:18:36.147 +00:00 [VRB]   Started : Wed May 15 14:18:36 2019
+2019-05-15 14:18:36.162 +00:00 [VRB] 
+2019-05-15 14:18:36.162 +00:00 [VRB]    Source : C:\build\MovieApp\
+2019-05-15 14:18:36.162 +00:00 [VRB]      Dest : c:\tools\elam\run\movieapp_com\publish\
+2019-05-15 14:18:36.162 +00:00 [VRB] 
+2019-05-15 14:18:36.162 +00:00 [VRB]     Files : *.*
+2019-05-15 14:18:36.162 +00:00 [VRB] 	    
+2019-05-15 14:18:36.162 +00:00 [VRB]   Options : *.* /S /E /COPY:DAT /PURGE /MIR /NP /R:1000000 /W:30 
+2019-05-15 14:18:36.162 +00:00 [VRB] 
+2019-05-15 14:18:36.162 +00:00 [VRB] ------------------------------------------------------------------------------
+2019-05-15 14:18:36.162 +00:00 [VRB] 
+2019-05-15 14:18:36.162 +00:00 [VRB] 	  New Dir          7	C:\build\MovieApp\
+2019-05-15 14:18:36.162 +00:00 [VRB] 	    New File  		     261	Default.aspx
+2019-05-15 14:18:36.162 +00:00 [VRB] 	    New File  		     818	Default.aspx.cs
+2019-05-15 14:18:36.162 +00:00 [VRB] 	    New File  		     100	Global.asax
+2019-05-15 14:18:36.162 +00:00 [VRB] 	    New File  		     967	Global.asax.cs
+2019-05-15 14:18:36.162 +00:00 [VRB] 	    New File  		    6752	MovieApp.csproj
+2019-05-15 14:18:36.162 +00:00 [VRB] 	    New File  		    1360	MovieApp.csproj.user
+2019-05-15 14:18:36.162 +00:00 [VRB] 	    New File  		   11465	Web.config
+2019-05-15 14:18:36.162 +00:00 [VRB] 	  New Dir          0	C:\build\MovieApp\App_Data\
+2019-05-15 14:18:36.162 +00:00 [VRB] 	  New Dir          2	C:\build\MovieApp\bin\
+2019-05-15 14:18:36.162 +00:00 [VRB] 	    New File  		   22016	MovieApp.dll
+2019-05-15 14:18:36.162 +00:00 [VRB] 	    New File  		   40448	MovieApp.pdb
+2019-05-15 14:18:36.162 +00:00 [VRB] 	  New Dir          0	C:\build\MovieApp\bin\Models\
+2019-05-15 14:18:36.162 +00:00 [VRB] 	  New Dir          1	C:\build\MovieApp\Content\
+2019-05-15 14:18:36.162 +00:00 [VRB] 	    New File  		    4952	Site.css
+2019-05-15 14:18:36.162 +00:00 [VRB] 	  New Dir          2	C:\build\MovieApp\Controllers\
+2019-05-15 14:18:36.162 +00:00 [VRB] 	    New File  		   13046	AccountController.cs
+2019-05-15 14:18:36.162 +00:00 [VRB] 	    New File  		    2084	HomeController.cs
+2019-05-15 14:18:36.162 +00:00 [VRB] 	  New Dir          2	C:\build\MovieApp\Models\
+2019-05-15 14:18:36.162 +00:00 [VRB] 	    New File  		    7531	MoviesDBModel.Designer.cs
+2019-05-15 14:18:36.178 +00:00 [VRB] 	    New File  		    3889	MoviesDBModel.edmx
+2019-05-15 14:18:36.178 +00:00 [VRB] 	  New Dir          0	C:\build\MovieApp\obj\
+2019-05-15 14:18:36.178 +00:00 [VRB] 	  New Dir          4	C:\build\MovieApp\obj\Debug\
+2019-05-15 14:18:36.178 +00:00 [VRB] 	    New File  		     756	MovieApp.csproj.FileListAbsolute.txt
+2019-05-15 14:18:36.178 +00:00 [VRB] 	    New File  		   22016	MovieApp.dll
+2019-05-15 14:18:36.178 +00:00 [VRB] 	    New File  		   40448	MovieApp.pdb
+2019-05-15 14:18:36.178 +00:00 [VRB] 	    New File  		    6592	ResolveAssemblyReference.cache
+2019-05-15 14:18:36.178 +00:00 [VRB] 	  New Dir          1	C:\build\MovieApp\obj\Debug\TempPE\
+2019-05-15 14:18:36.178 +00:00 [VRB] 	    New File  		    5632	Models.MoviesDBModel.Designer.cs.dll
+2019-05-15 14:18:36.178 +00:00 [VRB] 	  New Dir          1	C:\build\MovieApp\Properties\
+2019-05-15 14:18:36.178 +00:00 [VRB] 	    New File  		    1411	AssemblyInfo.cs
+2019-05-15 14:18:36.178 +00:00 [VRB] 	  New Dir          8	C:\build\MovieApp\Scripts\
+2019-05-15 14:18:36.178 +00:00 [VRB] 	    New File  		  127052	jquery-1.3.2.js
+2019-05-15 14:18:36.178 +00:00 [VRB] 	    New File  		   59326	jquery-1.3.2.min.js
+2019-05-15 14:18:36.178 +00:00 [VRB] 	    New File  		  202542	jquery-1.3.2.min-vsdoc.js
+2019-05-15 14:18:36.178 +00:00 [VRB] 	    New File  		  202542	jquery-1.3.2-vsdoc.js
+2019-05-15 14:18:36.178 +00:00 [VRB] 	    New File  		  310836	MicrosoftAjax.debug.js
+2019-05-15 14:18:36.194 +00:00 [VRB] 	    New File  		   99358	MicrosoftAjax.js
+2019-05-15 14:18:36.194 +00:00 [VRB] 	    New File  		   12592	MicrosoftMvcAjax.debug.js
+2019-05-15 14:18:36.194 +00:00 [VRB] 	    New File  		    4870	MicrosoftMvcAjax.js
+2019-05-15 14:18:36.194 +00:00 [VRB] 	  New Dir          1	C:\build\MovieApp\Views\
+2019-05-15 14:18:36.194 +00:00 [VRB] 	    New File  		    1568	Web.config
+2019-05-15 14:18:36.194 +00:00 [VRB] 	  New Dir          4	C:\build\MovieApp\Views\Account\
+2019-05-15 14:18:36.194 +00:00 [VRB] 	    New File  		    1742	ChangePassword.aspx
+2019-05-15 14:18:36.194 +00:00 [VRB] 	    New File  		     453	ChangePasswordSuccess.aspx
+2019-05-15 14:18:36.194 +00:00 [VRB] 	    New File  		    1482	LogOn.aspx
+2019-05-15 14:18:36.194 +00:00 [VRB] 	    New File  		    1880	Register.aspx
+2019-05-15 14:18:36.194 +00:00 [VRB] 	  New Dir          3	C:\build\MovieApp\Views\Home\
+2019-05-15 14:18:36.194 +00:00 [VRB] 	    New File  		    1400	Create.aspx
+2019-05-15 14:18:36.194 +00:00 [VRB] 	    New File  		    1465	Edit.aspx
+2019-05-15 14:18:36.194 +00:00 [VRB] 	    New File  		    1451	Index.aspx
+2019-05-15 14:18:36.194 +00:00 [VRB] 	  New Dir          3	C:\build\MovieApp\Views\Shared\
+2019-05-15 14:18:36.194 +00:00 [VRB] 	    New File  		     439	Error.aspx
+2019-05-15 14:18:36.194 +00:00 [VRB] 	    New File  		     365	LogOnUserControl.ascx
+2019-05-15 14:18:36.194 +00:00 [VRB] 	    New File  		    1250	Site.Master
+2019-05-15 14:18:36.194 +00:00 [VRB] 
+2019-05-15 14:18:36.194 +00:00 [VRB] ------------------------------------------------------------------------------
+2019-05-15 14:18:36.194 +00:00 [VRB] 
+2019-05-15 14:18:36.194 +00:00 [VRB]                Total    Copied   Skipped  Mismatch    FAILED    Extras
+2019-05-15 14:18:36.194 +00:00 [VRB]     Dirs :        16        16         0         0         0         0
+2019-05-15 14:18:36.194 +00:00 [VRB]    Files :        39        39         0         0         0         0
+2019-05-15 14:18:36.194 +00:00 [VRB]    Bytes :    1.16 m    1.16 m         0         0         0         0
+2019-05-15 14:18:36.194 +00:00 [VRB]    Times :   0:00:00   0:00:00                       0:00:00   0:00:00
+2019-05-15 14:18:36.194 +00:00 [VRB] 
+2019-05-15 14:18:36.194 +00:00 [VRB] 
+2019-05-15 14:18:36.194 +00:00 [VRB]    Speed :            39521193 Bytes/sec.
+2019-05-15 14:18:36.194 +00:00 [VRB]    Speed :            2261.420 MegaBytes/min.
+2019-05-15 14:18:36.194 +00:00 [VRB] 
+2019-05-15 14:18:36.194 +00:00 [VRB]    Ended : Wed May 15 14:18:36 2019
+2019-05-15 14:18:36.194 +00:00 [VRB] Exit code from process: 1
+2019-05-15 14:18:36.209 +00:00 [VRB] Reference Assembly Finder already exists at C:\Users\azure\AppData\Local\Temp\AssemblyFinderv2.0.exe
+2019-05-15 14:18:36.209 +00:00 [VRB] Gathering assemblies from c:\tools\elam\run\movieapp_com\publish\bin and assuming a v2.0 runtime
+2019-05-15 14:18:36.209 +00:00 [VRB] Cycle: 1
+2019-05-15 14:18:36.209 +00:00 [VRB] Inspecting referenced assemblies for: c:\tools\elam\run\movieapp_com\publish\bin\MovieApp.dll
+2019-05-15 14:18:36.209 +00:00 [VRB] Executing C:\Users\azure\AppData\Local\Temp\AssemblyFinderv2.0.exe with arguments: "c:\tools\elam\run\movieapp_com\publish\bin\MovieApp.dll"
+2019-05-15 14:18:36.334 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_64\System.Web\2.0.0.0__b03f5f7f11d50a3a\System.Web.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.Web.dll
+2019-05-15 14:18:36.334 +00:00 [VRB] Copying C:\windows\assembly\GAC_MSIL\System.Data.Entity\3.5.0.0__b77a5c561934e089\System.Data.Entity.dll to c:\tools\elam\run\movieapp_com\publish\bin\System.Data.Entity.dll
+2019-05-15 14:18:36.334 +00:00 [VRB] Copying C:\windows\assembly\GAC_MSIL\System.Web.Mvc\1.0.0.0__31bf3856ad364e35\System.Web.Mvc.dll to c:\tools\elam\run\movieapp_com\publish\bin\System.Web.Mvc.dll
+2019-05-15 14:18:36.334 +00:00 [VRB] Ignoring assembly that resolved to C:\Windows\Microsoft.NET\Framework64\v2.0.50727\mscorlib.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll
+2019-05-15 14:18:36.334 +00:00 [VRB] Copying C:\windows\assembly\GAC_MSIL\System.Web.Routing\3.5.0.0__31bf3856ad364e35\System.Web.Routing.dll to c:\tools\elam\run\movieapp_com\publish\bin\System.Web.Routing.dll
+2019-05-15 14:18:36.334 +00:00 [VRB] Copying C:\windows\assembly\GAC_MSIL\System.Runtime.Serialization\3.0.0.0__b77a5c561934e089\System.Runtime.Serialization.dll to c:\tools\elam\run\movieapp_com\publish\bin\System.Runtime.Serialization.dll
+2019-05-15 14:18:36.350 +00:00 [VRB] Copying C:\windows\assembly\GAC_MSIL\System.Core\3.5.0.0__b77a5c561934e089\System.Core.dll to c:\tools\elam\run\movieapp_com\publish\bin\System.Core.dll
+2019-05-15 14:18:36.350 +00:00 [VRB] Copying C:\windows\assembly\GAC_MSIL\System.Web.Abstractions\3.5.0.0__31bf3856ad364e35\System.Web.Abstractions.dll to c:\tools\elam\run\movieapp_com\publish\bin\System.Web.Abstractions.dll
+2019-05-15 14:18:36.350 +00:00 [VRB] Number of new assemblies copied in this cycle: 6
+2019-05-15 14:18:36.350 +00:00 [VRB] Cycle: 2
+2019-05-15 14:18:36.350 +00:00 [VRB] Inspecting referenced assemblies for: c:\tools\elam\run\movieapp_com\publish\bin\System.Core.dll
+2019-05-15 14:18:36.350 +00:00 [VRB] Executing C:\Users\azure\AppData\Local\Temp\AssemblyFinderv2.0.exe with arguments: "c:\tools\elam\run\movieapp_com\publish\bin\System.Core.dll"
+2019-05-15 14:18:36.397 +00:00 [VRB] Ignoring assembly that resolved to C:\Windows\Microsoft.NET\Framework64\v2.0.50727\mscorlib.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll
+2019-05-15 14:18:36.397 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_MSIL\System\2.0.0.0__b77a5c561934e089\System.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.dll
+2019-05-15 14:18:36.397 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_MSIL\System.Security\2.0.0.0__b03f5f7f11d50a3a\System.Security.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.Security.dll
+2019-05-15 14:18:36.397 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_MSIL\System.Xml\2.0.0.0__b77a5c561934e089\System.Xml.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.Xml.dll
+2019-05-15 14:18:36.397 +00:00 [VRB] Inspecting referenced assemblies for: c:\tools\elam\run\movieapp_com\publish\bin\System.Data.Entity.dll
+2019-05-15 14:18:36.397 +00:00 [VRB] Executing C:\Users\azure\AppData\Local\Temp\AssemblyFinderv2.0.exe with arguments: "c:\tools\elam\run\movieapp_com\publish\bin\System.Data.Entity.dll"
+2019-05-15 14:18:36.459 +00:00 [VRB] Ignoring assembly that resolved to C:\Windows\Microsoft.NET\Framework64\v2.0.50727\mscorlib.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll
+2019-05-15 14:18:36.459 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_64\System.Data\2.0.0.0__b77a5c561934e089\System.Data.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.Data.dll
+2019-05-15 14:18:36.459 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_MSIL\System\2.0.0.0__b77a5c561934e089\System.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.dll
+2019-05-15 14:18:36.459 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_MSIL\System.Xml\2.0.0.0__b77a5c561934e089\System.Xml.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.Xml.dll
+2019-05-15 14:18:36.459 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_64\System.Transactions\2.0.0.0__b77a5c561934e089\System.Transactions.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.Transactions.dll
+2019-05-15 14:18:36.459 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_MSIL\System.Configuration\2.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.Configuration.dll
+2019-05-15 14:18:36.459 +00:00 [VRB] Inspecting referenced assemblies for: c:\tools\elam\run\movieapp_com\publish\bin\System.Runtime.Serialization.dll
+2019-05-15 14:18:36.459 +00:00 [VRB] Executing C:\Users\azure\AppData\Local\Temp\AssemblyFinderv2.0.exe with arguments: "c:\tools\elam\run\movieapp_com\publish\bin\System.Runtime.Serialization.dll"
+2019-05-15 14:18:36.506 +00:00 [VRB] Ignoring assembly that resolved to C:\Windows\Microsoft.NET\Framework64\v2.0.50727\mscorlib.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll
+2019-05-15 14:18:36.506 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_MSIL\System\2.0.0.0__b77a5c561934e089\System.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.dll
+2019-05-15 14:18:36.506 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_MSIL\System.Xml\2.0.0.0__b77a5c561934e089\System.Xml.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.Xml.dll
+2019-05-15 14:18:36.506 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_MSIL\System.Configuration\2.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.Configuration.dll
+2019-05-15 14:18:36.506 +00:00 [VRB] Copying C:\windows\assembly\GAC_MSIL\SMDiagnostics\3.0.0.0__b77a5c561934e089\SMDiagnostics.dll to c:\tools\elam\run\movieapp_com\publish\bin\SMDiagnostics.dll
+2019-05-15 14:18:36.506 +00:00 [VRB] Inspecting referenced assemblies for: c:\tools\elam\run\movieapp_com\publish\bin\System.Web.Abstractions.dll
+2019-05-15 14:18:36.506 +00:00 [VRB] Executing C:\Users\azure\AppData\Local\Temp\AssemblyFinderv2.0.exe with arguments: "c:\tools\elam\run\movieapp_com\publish\bin\System.Web.Abstractions.dll"
+2019-05-15 14:18:36.553 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_MSIL\System\2.0.0.0__b77a5c561934e089\System.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.dll
+2019-05-15 14:18:36.553 +00:00 [VRB] Ignoring assembly that resolved to C:\Windows\Microsoft.NET\Framework64\v2.0.50727\mscorlib.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll
+2019-05-15 14:18:36.553 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_64\System.Web\2.0.0.0__b03f5f7f11d50a3a\System.Web.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.Web.dll
+2019-05-15 14:18:36.553 +00:00 [VRB] Inspecting referenced assemblies for: c:\tools\elam\run\movieapp_com\publish\bin\System.Web.Mvc.dll
+2019-05-15 14:18:36.553 +00:00 [VRB] Executing C:\Users\azure\AppData\Local\Temp\AssemblyFinderv2.0.exe with arguments: "c:\tools\elam\run\movieapp_com\publish\bin\System.Web.Mvc.dll"
+2019-05-15 14:18:36.631 +00:00 [VRB] Ignoring assembly that resolved to C:\Windows\Microsoft.NET\Framework64\v2.0.50727\mscorlib.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll
+2019-05-15 14:18:36.631 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_64\System.Web\2.0.0.0__b03f5f7f11d50a3a\System.Web.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.Web.dll
+2019-05-15 14:18:36.631 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_MSIL\System\2.0.0.0__b77a5c561934e089\System.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.dll
+2019-05-15 14:18:36.631 +00:00 [VRB] Copying C:\windows\assembly\GAC_MSIL\System.Web.Extensions\3.5.0.0__31bf3856ad364e35\System.Web.Extensions.dll to c:\tools\elam\run\movieapp_com\publish\bin\System.Web.Extensions.dll
+2019-05-15 14:18:36.631 +00:00 [VRB] Inspecting referenced assemblies for: c:\tools\elam\run\movieapp_com\publish\bin\System.Web.Routing.dll
+2019-05-15 14:18:36.631 +00:00 [VRB] Executing C:\Users\azure\AppData\Local\Temp\AssemblyFinderv2.0.exe with arguments: "c:\tools\elam\run\movieapp_com\publish\bin\System.Web.Routing.dll"
+2019-05-15 14:18:36.694 +00:00 [VRB] Ignoring assembly that resolved to C:\Windows\Microsoft.NET\Framework64\v2.0.50727\mscorlib.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll
+2019-05-15 14:18:36.694 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_64\System.Web\2.0.0.0__b03f5f7f11d50a3a\System.Web.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.Web.dll
+2019-05-15 14:18:36.694 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_MSIL\System\2.0.0.0__b77a5c561934e089\System.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.dll
+2019-05-15 14:18:36.694 +00:00 [VRB] Number of new assemblies copied in this cycle: 2
+2019-05-15 14:18:36.694 +00:00 [VRB] Cycle: 3
+2019-05-15 14:18:36.694 +00:00 [VRB] Inspecting referenced assemblies for: c:\tools\elam\run\movieapp_com\publish\bin\SMDiagnostics.dll
+2019-05-15 14:18:36.694 +00:00 [VRB] Executing C:\Users\azure\AppData\Local\Temp\AssemblyFinderv2.0.exe with arguments: "c:\tools\elam\run\movieapp_com\publish\bin\SMDiagnostics.dll"
+2019-05-15 14:18:36.740 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_MSIL\System\2.0.0.0__b77a5c561934e089\System.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.dll
+2019-05-15 14:18:36.740 +00:00 [VRB] Ignoring assembly that resolved to C:\Windows\Microsoft.NET\Framework64\v2.0.50727\mscorlib.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll
+2019-05-15 14:18:36.740 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_MSIL\System.Configuration\2.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.Configuration.dll
+2019-05-15 14:18:36.740 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_MSIL\System.Xml\2.0.0.0__b77a5c561934e089\System.Xml.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.Xml.dll
+2019-05-15 14:18:36.740 +00:00 [VRB] Inspecting referenced assemblies for: c:\tools\elam\run\movieapp_com\publish\bin\System.Web.Extensions.dll
+2019-05-15 14:18:36.740 +00:00 [VRB] Executing C:\Users\azure\AppData\Local\Temp\AssemblyFinderv2.0.exe with arguments: "c:\tools\elam\run\movieapp_com\publish\bin\System.Web.Extensions.dll"
+2019-05-15 14:18:36.819 +00:00 [VRB] Ignoring assembly that resolved to C:\Windows\Microsoft.NET\Framework64\v2.0.50727\mscorlib.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll
+2019-05-15 14:18:36.819 +00:00 [VRB] Copying C:\windows\assembly\GAC_MSIL\System.ServiceModel\3.0.0.0__b77a5c561934e089\System.ServiceModel.dll to c:\tools\elam\run\movieapp_com\publish\bin\System.ServiceModel.dll
+2019-05-15 14:18:36.834 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_64\System.Web\2.0.0.0__b03f5f7f11d50a3a\System.Web.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.Web.dll
+2019-05-15 14:18:36.834 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_MSIL\System\2.0.0.0__b77a5c561934e089\System.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.dll
+2019-05-15 14:18:36.834 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_MSIL\System.Configuration\2.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.Configuration.dll
+2019-05-15 14:18:36.834 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_MSIL\System.Xml\2.0.0.0__b77a5c561934e089\System.Xml.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.Xml.dll
+2019-05-15 14:18:36.834 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.Web.Services.dll
+2019-05-15 14:18:36.834 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_64\System.Data\2.0.0.0__b77a5c561934e089\System.Data.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.Data.dll
+2019-05-15 14:18:36.834 +00:00 [VRB] Copying C:\windows\assembly\GAC_MSIL\System.Data.Linq\3.5.0.0__b77a5c561934e089\System.Data.Linq.dll to c:\tools\elam\run\movieapp_com\publish\bin\System.Data.Linq.dll
+2019-05-15 14:18:36.834 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_MSIL\System.Drawing\2.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.Drawing.dll
+2019-05-15 14:18:36.834 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_MSIL\System.Windows.Forms\2.0.0.0__b77a5c561934e089\System.Windows.Forms.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.Windows.Forms.dll
+2019-05-15 14:18:36.834 +00:00 [VRB] Copying C:\windows\assembly\GAC_MSIL\System.ServiceModel.Web\3.5.0.0__31bf3856ad364e35\System.ServiceModel.Web.dll to c:\tools\elam\run\movieapp_com\publish\bin\System.ServiceModel.Web.dll
+2019-05-15 14:18:36.834 +00:00 [VRB] Copying C:\windows\assembly\GAC_MSIL\System.Data.Services.Client\3.5.0.0__b77a5c561934e089\System.Data.Services.Client.dll to c:\tools\elam\run\movieapp_com\publish\bin\System.Data.Services.Client.dll
+2019-05-15 14:18:36.834 +00:00 [VRB] Copying C:\windows\assembly\GAC_MSIL\System.Data.Services.Design\3.5.0.0__b77a5c561934e089\System.Data.Services.Design.dll to c:\tools\elam\run\movieapp_com\publish\bin\System.Data.Services.Design.dll
+2019-05-15 14:18:36.834 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_MSIL\System.Design\2.0.0.0__b03f5f7f11d50a3a\System.Design.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.Design.dll
+2019-05-15 14:18:36.834 +00:00 [VRB] Number of new assemblies copied in this cycle: 5
+2019-05-15 14:18:36.834 +00:00 [VRB] Cycle: 4
+2019-05-15 14:18:36.834 +00:00 [VRB] Inspecting referenced assemblies for: c:\tools\elam\run\movieapp_com\publish\bin\System.Data.Linq.dll
+2019-05-15 14:18:36.834 +00:00 [VRB] Executing C:\Users\azure\AppData\Local\Temp\AssemblyFinderv2.0.exe with arguments: "c:\tools\elam\run\movieapp_com\publish\bin\System.Data.Linq.dll"
+2019-05-15 14:18:36.897 +00:00 [VRB] Ignoring assembly that resolved to C:\Windows\Microsoft.NET\Framework64\v2.0.50727\mscorlib.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll
+2019-05-15 14:18:36.897 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_MSIL\System\2.0.0.0__b77a5c561934e089\System.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.dll
+2019-05-15 14:18:36.897 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_64\System.Data\2.0.0.0__b77a5c561934e089\System.Data.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.Data.dll
+2019-05-15 14:18:36.897 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_MSIL\System.Xml\2.0.0.0__b77a5c561934e089\System.Xml.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.Xml.dll
+2019-05-15 14:18:36.897 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_64\System.Transactions\2.0.0.0__b77a5c561934e089\System.Transactions.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.Transactions.dll
+2019-05-15 14:18:36.897 +00:00 [VRB] Copying C:\windows\assembly\GAC_MSIL\System.Xml.Linq\3.5.0.0__b77a5c561934e089\System.Xml.Linq.dll to c:\tools\elam\run\movieapp_com\publish\bin\System.Xml.Linq.dll
+2019-05-15 14:18:36.897 +00:00 [VRB] Inspecting referenced assemblies for: c:\tools\elam\run\movieapp_com\publish\bin\System.Data.Services.Client.dll
+2019-05-15 14:18:36.897 +00:00 [VRB] Executing C:\Users\azure\AppData\Local\Temp\AssemblyFinderv2.0.exe with arguments: "c:\tools\elam\run\movieapp_com\publish\bin\System.Data.Services.Client.dll"
+2019-05-15 14:18:36.959 +00:00 [VRB] Ignoring assembly that resolved to C:\Windows\Microsoft.NET\Framework64\v2.0.50727\mscorlib.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll
+2019-05-15 14:18:36.959 +00:00 [VRB] Copying C:\windows\assembly\GAC_MSIL\WindowsBase\3.0.0.0__31bf3856ad364e35\WindowsBase.dll to c:\tools\elam\run\movieapp_com\publish\bin\WindowsBase.dll
+2019-05-15 14:18:36.959 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_MSIL\System.Xml\2.0.0.0__b77a5c561934e089\System.Xml.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.Xml.dll
+2019-05-15 14:18:36.959 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_MSIL\System\2.0.0.0__b77a5c561934e089\System.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.dll
+2019-05-15 14:18:36.959 +00:00 [VRB] Inspecting referenced assemblies for: c:\tools\elam\run\movieapp_com\publish\bin\System.Data.Services.Design.dll
+2019-05-15 14:18:36.959 +00:00 [VRB] Executing C:\Users\azure\AppData\Local\Temp\AssemblyFinderv2.0.exe with arguments: "c:\tools\elam\run\movieapp_com\publish\bin\System.Data.Services.Design.dll"
+2019-05-15 14:18:37.022 +00:00 [VRB] Ignoring assembly that resolved to C:\Windows\Microsoft.NET\Framework64\v2.0.50727\mscorlib.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll
+2019-05-15 14:18:37.022 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_MSIL\System\2.0.0.0__b77a5c561934e089\System.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.dll
+2019-05-15 14:18:37.022 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_MSIL\System.Xml\2.0.0.0__b77a5c561934e089\System.Xml.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.Xml.dll
+2019-05-15 14:18:37.022 +00:00 [VRB] Inspecting referenced assemblies for: c:\tools\elam\run\movieapp_com\publish\bin\System.ServiceModel.dll
+2019-05-15 14:18:37.022 +00:00 [VRB] Executing C:\Users\azure\AppData\Local\Temp\AssemblyFinderv2.0.exe with arguments: "c:\tools\elam\run\movieapp_com\publish\bin\System.ServiceModel.dll"
+2019-05-15 14:18:37.131 +00:00 [VRB] Ignoring assembly that resolved to C:\Windows\Microsoft.NET\Framework64\v2.0.50727\mscorlib.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll
+2019-05-15 14:18:37.131 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_MSIL\System\2.0.0.0__b77a5c561934e089\System.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.dll
+2019-05-15 14:18:37.131 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_64\System.Web\2.0.0.0__b03f5f7f11d50a3a\System.Web.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.Web.dll
+2019-05-15 14:18:37.131 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_MSIL\System.Xml\2.0.0.0__b77a5c561934e089\System.Xml.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.Xml.dll
+2019-05-15 14:18:37.131 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_MSIL\System.Configuration\2.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.Configuration.dll
+2019-05-15 14:18:37.131 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_64\System.Transactions\2.0.0.0__b77a5c561934e089\System.Transactions.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.Transactions.dll
+2019-05-15 14:18:37.131 +00:00 [VRB] Copying C:\windows\assembly\GAC_MSIL\System.IdentityModel\3.0.0.0__b77a5c561934e089\System.IdentityModel.dll to c:\tools\elam\run\movieapp_com\publish\bin\System.IdentityModel.dll
+2019-05-15 14:18:37.131 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_64\System.EnterpriseServices\2.0.0.0__b03f5f7f11d50a3a\System.EnterpriseServices.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.EnterpriseServices.dll
+2019-05-15 14:18:37.131 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_MSIL\System.Web.RegularExpressions\2.0.0.0__b03f5f7f11d50a3a\System.Web.RegularExpressions.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.Web.RegularExpressions.dll
+2019-05-15 14:18:37.131 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_MSIL\System.ServiceProcess\2.0.0.0__b03f5f7f11d50a3a\System.ServiceProcess.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.ServiceProcess.dll
+2019-05-15 14:18:37.131 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.Web.Services.dll
+2019-05-15 14:18:37.131 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_MSIL\System.Messaging\2.0.0.0__b03f5f7f11d50a3a\System.Messaging.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.Messaging.dll
+2019-05-15 14:18:37.131 +00:00 [VRB] Copying C:\windows\assembly\GAC_MSIL\System.IdentityModel.Selectors\3.0.0.0__b77a5c561934e089\System.IdentityModel.Selectors.dll to c:\tools\elam\run\movieapp_com\publish\bin\System.IdentityModel.Selectors.dll
+2019-05-15 14:18:37.131 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_MSIL\System.DirectoryServices\2.0.0.0__b03f5f7f11d50a3a\System.DirectoryServices.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.DirectoryServices.dll
+2019-05-15 14:18:37.131 +00:00 [VRB] Copying C:\windows\assembly\GAC_MSIL\Microsoft.Transactions.Bridge\3.0.0.0__b03f5f7f11d50a3a\Microsoft.Transactions.Bridge.dll to c:\tools\elam\run\movieapp_com\publish\bin\Microsoft.Transactions.Bridge.dll
+2019-05-15 14:18:37.147 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_MSIL\System.Security\2.0.0.0__b03f5f7f11d50a3a\System.Security.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.Security.dll
+2019-05-15 14:18:37.147 +00:00 [VRB] Inspecting referenced assemblies for: c:\tools\elam\run\movieapp_com\publish\bin\System.ServiceModel.Web.dll
+2019-05-15 14:18:37.147 +00:00 [VRB] Executing C:\Users\azure\AppData\Local\Temp\AssemblyFinderv2.0.exe with arguments: "c:\tools\elam\run\movieapp_com\publish\bin\System.ServiceModel.Web.dll"
+2019-05-15 14:18:37.209 +00:00 [VRB] Ignoring assembly that resolved to C:\Windows\Microsoft.NET\Framework64\v2.0.50727\mscorlib.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll
+2019-05-15 14:18:37.209 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_MSIL\System\2.0.0.0__b77a5c561934e089\System.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.dll
+2019-05-15 14:18:37.209 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_MSIL\System.Configuration\2.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.Configuration.dll
+2019-05-15 14:18:37.209 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_MSIL\System.Xml\2.0.0.0__b77a5c561934e089\System.Xml.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.Xml.dll
+2019-05-15 14:18:37.209 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_64\System.Web\2.0.0.0__b03f5f7f11d50a3a\System.Web.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.Web.dll
+2019-05-15 14:18:37.209 +00:00 [VRB] Number of new assemblies copied in this cycle: 5
+2019-05-15 14:18:37.209 +00:00 [VRB] Cycle: 5
+2019-05-15 14:18:37.209 +00:00 [VRB] Inspecting referenced assemblies for: c:\tools\elam\run\movieapp_com\publish\bin\Microsoft.Transactions.Bridge.dll
+2019-05-15 14:18:37.209 +00:00 [VRB] Executing C:\Users\azure\AppData\Local\Temp\AssemblyFinderv2.0.exe with arguments: "c:\tools\elam\run\movieapp_com\publish\bin\Microsoft.Transactions.Bridge.dll"
+2019-05-15 14:18:37.272 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_MSIL\System\2.0.0.0__b77a5c561934e089\System.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.dll
+2019-05-15 14:18:37.272 +00:00 [VRB] Ignoring assembly that resolved to C:\Windows\Microsoft.NET\Framework64\v2.0.50727\mscorlib.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll
+2019-05-15 14:18:37.272 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_MSIL\System.Xml\2.0.0.0__b77a5c561934e089\System.Xml.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.Xml.dll
+2019-05-15 14:18:37.272 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_MSIL\System.Configuration\2.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.Configuration.dll
+2019-05-15 14:18:37.272 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_64\System.Transactions\2.0.0.0__b77a5c561934e089\System.Transactions.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.Transactions.dll
+2019-05-15 14:18:37.272 +00:00 [VRB] Inspecting referenced assemblies for: c:\tools\elam\run\movieapp_com\publish\bin\System.IdentityModel.dll
+2019-05-15 14:18:37.272 +00:00 [VRB] Executing C:\Users\azure\AppData\Local\Temp\AssemblyFinderv2.0.exe with arguments: "c:\tools\elam\run\movieapp_com\publish\bin\System.IdentityModel.dll"
+2019-05-15 14:18:37.319 +00:00 [VRB] Ignoring assembly that resolved to C:\Windows\Microsoft.NET\Framework64\v2.0.50727\mscorlib.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll
+2019-05-15 14:18:37.319 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_MSIL\System\2.0.0.0__b77a5c561934e089\System.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.dll
+2019-05-15 14:18:37.319 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_MSIL\System.Xml\2.0.0.0__b77a5c561934e089\System.Xml.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.Xml.dll
+2019-05-15 14:18:37.319 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_64\System.Web\2.0.0.0__b03f5f7f11d50a3a\System.Web.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.Web.dll
+2019-05-15 14:18:37.319 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_MSIL\System.Security\2.0.0.0__b03f5f7f11d50a3a\System.Security.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.Security.dll
+2019-05-15 14:18:37.319 +00:00 [VRB] Inspecting referenced assemblies for: c:\tools\elam\run\movieapp_com\publish\bin\System.IdentityModel.Selectors.dll
+2019-05-15 14:18:37.319 +00:00 [VRB] Executing C:\Users\azure\AppData\Local\Temp\AssemblyFinderv2.0.exe with arguments: "c:\tools\elam\run\movieapp_com\publish\bin\System.IdentityModel.Selectors.dll"
+2019-05-15 14:18:37.365 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_MSIL\System\2.0.0.0__b77a5c561934e089\System.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.dll
+2019-05-15 14:18:37.365 +00:00 [VRB] Ignoring assembly that resolved to C:\Windows\Microsoft.NET\Framework64\v2.0.50727\mscorlib.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll
+2019-05-15 14:18:37.365 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_MSIL\System.Xml\2.0.0.0__b77a5c561934e089\System.Xml.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.Xml.dll
+2019-05-15 14:18:37.365 +00:00 [VRB] Inspecting referenced assemblies for: c:\tools\elam\run\movieapp_com\publish\bin\System.Xml.Linq.dll
+2019-05-15 14:18:37.365 +00:00 [VRB] Executing C:\Users\azure\AppData\Local\Temp\AssemblyFinderv2.0.exe with arguments: "c:\tools\elam\run\movieapp_com\publish\bin\System.Xml.Linq.dll"
+2019-05-15 14:18:37.412 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_MSIL\System\2.0.0.0__b77a5c561934e089\System.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.dll
+2019-05-15 14:18:37.412 +00:00 [VRB] Ignoring assembly that resolved to C:\Windows\Microsoft.NET\Framework64\v2.0.50727\mscorlib.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll
+2019-05-15 14:18:37.412 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_MSIL\System.Xml\2.0.0.0__b77a5c561934e089\System.Xml.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.Xml.dll
+2019-05-15 14:18:37.412 +00:00 [VRB] Inspecting referenced assemblies for: c:\tools\elam\run\movieapp_com\publish\bin\WindowsBase.dll
+2019-05-15 14:18:37.412 +00:00 [VRB] Executing C:\Users\azure\AppData\Local\Temp\AssemblyFinderv2.0.exe with arguments: "c:\tools\elam\run\movieapp_com\publish\bin\WindowsBase.dll"
+2019-05-15 14:18:37.475 +00:00 [VRB] Ignoring assembly that resolved to C:\Windows\Microsoft.NET\Framework64\v2.0.50727\mscorlib.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll
+2019-05-15 14:18:37.475 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_MSIL\System\2.0.0.0__b77a5c561934e089\System.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.dll
+2019-05-15 14:18:37.475 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_MSIL\System.Security\2.0.0.0__b03f5f7f11d50a3a\System.Security.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.Security.dll
+2019-05-15 14:18:37.475 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_MSIL\System.Xml\2.0.0.0__b77a5c561934e089\System.Xml.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.Xml.dll
+2019-05-15 14:18:37.475 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_MSIL\Accessibility\2.0.0.0__b03f5f7f11d50a3a\Accessibility.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\Accessibility.dll
+2019-05-15 14:18:37.475 +00:00 [VRB] Ignoring assembly that resolved to C:\windows\assembly\GAC_MSIL\System.Configuration\2.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll due to existence of C:\windows\Microsoft.NET\Framework\v2.0.50727\System.Configuration.dll
+2019-05-15 14:18:37.475 +00:00 [VRB] Number of new assemblies copied in this cycle: 0
+2019-05-15 14:18:37.475 +00:00 [DBG] Total cycles taken to resolve all dependencies: 5
+2019-05-15 14:18:37.490 +00:00 [VRB] { origin = EAS, package_name = movieapp_com, maintainer = Package Author <author@mycompany.org>, site_name = movieapp.com, runtime_version = v2.0, managed_pipeline_mode = Integrated, http_port = 80, toml_config = [[configuration.connectionStrings.add]]
+name="ApplicationServices"
+connectionString="data source=.\\SQLEXPRESS2008;Database=aspnetdb;Integrated Security=SSPI"
+providerName="System.Data.SqlClient"
+
+[[configuration.connectionStrings.add]]
+name="MoviesDBEntities"
+connectionString="metadata=res://*/Models.MoviesDBModel.csdl|res://*/Models.MoviesDBModel.ssdl|res://*/Models.MoviesDBModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;Data Source=.\\SQLEXPRESS2008;Database=MoviesDB;Integrated Security=True;MultipleActiveResultSets=True&quot;"
+providerName="System.Data.EntityClient"
+
+, properties = System.Collections.Generic.Dictionary`2[System.String,System.String], env = System.Collections.Generic.Dictionary`2[System.Object,System.Object] }
+2019-05-15 14:18:37.490 +00:00 [VRB] Adding CI artifacts for azure-pipelines to the package
+2019-05-15 14:18:37.490 +00:00 [VRB] Assembling artifacts at c:\tools\elam\run\movieapp_com from templates at C:\ProgramData\elam\templates\Global\all
+2019-05-15 14:18:37.569 +00:00 [DBG] Generating artifact: c:\tools\elam\run\movieapp_com\.gitignore
+2019-05-15 14:18:37.569 +00:00 [VRB] Could not find a part of the path 'C:\ProgramData\elam\templates\Global\aspnet35'.
+2019-05-15 14:18:37.569 +00:00 [VRB] Could not find a part of the path 'C:\ProgramData\elam\templates\IIS\all'.
+2019-05-15 14:18:37.569 +00:00 [VRB] Assembling artifacts at c:\tools\elam\run\movieapp_com from templates at C:\ProgramData\elam\templates\IIS\aspnet35
+2019-05-15 14:18:37.647 +00:00 [DBG] Generating artifact: c:\tools\elam\run\movieapp_com\habitat\default.toml
+2019-05-15 14:18:37.647 +00:00 [DBG] Generating artifact: c:\tools\elam\run\movieapp_com\habitat\plan.ps1
+2019-05-15 14:18:37.647 +00:00 [DBG] Generating artifact: c:\tools\elam\run\movieapp_com\habitat\config\website.ps1
+2019-05-15 14:18:37.647 +00:00 [DBG] Generating artifact: c:\tools\elam\run\movieapp_com\habitat\hooks\init
+2019-05-15 14:18:37.647 +00:00 [DBG] Generating artifact: c:\tools\elam\run\movieapp_com\habitat\hooks\run
+2019-05-15 14:18:37.647 +00:00 [VRB] Assembling artifacts at c:\tools\elam\run\movieapp_com from templates at C:\ProgramData\elam\templates\CI\azure-pipelines
+2019-05-15 14:18:37.647 +00:00 [DBG] Generating artifact: c:\tools\elam\run\movieapp_com\azure-pipelines.yml
+2019-05-15 14:18:37.647 +00:00 [INF] Export completed.

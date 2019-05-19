@@ -1,0 +1,13 @@
+﻿# Publishing point that IIS will read application from
+$app_publish_path = "{{pkg.svc_path}}/publish"
+
+# Remove the existing Junction point
+if(Test-Path $app_publish_path) { Remove-Item $app_publish_path -Recurse -Force }
+
+# Create a new junction point pointing at the package location on disk
+$real_app_publish_path = "{{pkg.path}}/{{pkg.name}}-{{pkg.version}}/publish"
+New-Item -Path $app_publish_path -ItemType Junction -target $real_app_publish_path | Out-Null
+
+# Remove any existing web.config and make a symbolic link to the one in the config folder
+if(Test-Path $app_publish_path\web.config) { Remove-Item $app_publish_path\web.config -Force }
+New-Item -Name web.config -Path $app_publish_path -ItemType SymbolicLink -target "{{pkg.svc_config_path}}/web.config" -Force | Out-Null

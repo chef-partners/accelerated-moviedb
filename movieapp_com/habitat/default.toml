@@ -1,0 +1,15 @@
+﻿[site]
+http_port=8081
+site_name="movieapp.com"
+runtime_version="v2.0"
+managed_pipeline_mode="Integrated"
+
+[[configuration.connectionStrings.add]]
+name="ApplicationServices"
+connectionString="data source=tcp:chefconfmoviedb.database.windows.net,1433;Initial Catalog=aspnetdb;Persist Security Info=False;User ID=chefadmin;Password=!!ChefSoftware1??;MultipleActiveResultSets=True;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30"
+providerName="System.Data.SqlClient"
+
+[[configuration.connectionStrings.add]]
+name="MoviesDBEntities"
+connectionString="metadata=res://*/Models.MoviesDBModel.csdl|res://*/Models.MoviesDBModel.ssdl|res://*/Models.MoviesDBModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;Data Source=tcp:chefconfmoviedb.database.windows.net,1433;Initial Catalog=MoviesDB;Persist Security Info=False;User ID=chefadmin;Password=!!ChefSoftware1??;MultipleActiveResultSets=True;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30&quot;"
+providerName="System.Data.EntityClient"

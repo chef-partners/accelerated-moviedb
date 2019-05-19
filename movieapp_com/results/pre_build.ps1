@@ -1,0 +1,5 @@
+$pkg_origin="russellseymour"
+$pkg_name="movieapp_com"
+$pkg_version="master"
+$pkg_release="20190515194636"
+$pkg_ident="russellseymour/movieapp_com/master/20190515194636"
